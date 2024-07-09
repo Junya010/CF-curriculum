@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin: 0 auto;
+    background-color: blue;
+    width: 130px;
+}
+.mainBox{
+    background-color: yellow;
+    width: 600px;
+    height: 300px;
+    padding-top: 60px;
+    padding-left: 50px;
+}

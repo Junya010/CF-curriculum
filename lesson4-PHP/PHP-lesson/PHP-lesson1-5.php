@@ -19,19 +19,35 @@
     */
 
     //何か一つ組み込み関数を使い、その結果をechoで出力してください！（組み込み関数は、何でもいいです。）
+    $counts=array(1,2,3,4,5,6,6,7,);
+    $count=count($counts);
+    echo $count;
+    echo "<br>";
     
-
-
     //二つの数値を引数として受け取り、それらの合計を返す関数addNumbersを作成してください。
-
+    function addNumbers($a,$b){
+      echo $a+$b;
+    }
+    echo "<br>";
 
 
     //文字列を引数として受け取り、その文字列が空でない場合はその文字列を、空の場合は"空の文字列"という文字列を返す関数checkStringを作成してください。
-
+    function checkString($str){
+      if(empty($str)){
+        echo "空の文字列";
+      }else{
+        echo $str;
+      }
+    }
+    echo "<br>";
 
 
     // 配列を引数として受け取り、その配列の要素の数を返す関数countElementsを作成してください。
-
+    function countElements($counts){
+      $count=count($counts);
+      echo $count;
+    }
+    echo "<br>";
 
     /*
       下記の$secretの文字列はシーザー暗号化されています。

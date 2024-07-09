@@ -11,4 +11,30 @@ body{
 }
 
 /* ここから処理を記述 */
-
+header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+.header-logo img{
+    height: 100%;
+}
+.header-list{
+    display: flex;
+    align-items: end;
+    background-color: aquamarine;
+    height: 100px;
+    width: 100%;
+    margin: 0;
+}
+.header-list li:first-child{
+    font-size: 20px;
+    margin-right: 15%;
+    font-weight: bold;
+}
+.header-list li:nth-child(2),
+.header-list li:nth-child(3),
+.header-list li:nth-child(4),
+.header-list li:nth-child(5){
+    margin-right: 10px;
+}

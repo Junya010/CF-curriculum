@@ -19,8 +19,30 @@
         ③１〜２００までの数字で2の倍数かつ、５の倍数である数字だけをコンソールに出力させて下さい。
         */
        //下記から記述して下さい。課題のヒント：わからない方は条件分岐を確認してみて！
+        console.log("1~100までの数字を出力");
+        let count=1;
+        while(count<=100){
+            console.log(count);
+            count++;
+        }
 
+        console.log("1~100までの数字で2の倍数の数字だけ出力");
+        count=1;
+        while(count<=100){
+            if(count%2==0){
+                console.log(count);
+            }
+            count++;
+        }
 
+        console.log("1~200までの数字で2の倍数活、5の倍数である数字だけを出力");
+        count =1;
+        while(count<=200){
+            if(count%2==0 && count%5==0){
+                console.log(count);
+            }
+            count++;
+        }
     </script>
 </body>
 </html>

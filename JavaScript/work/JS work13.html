@@ -18,7 +18,28 @@
          ②コンソールに、1~100までの数字がコンソール表示される関数「hundred()」を定義して、それを呼び出して下さい。
          ③20〜２００までの数字で2の倍数かつ、５の倍数である数字だけをコンソール表示する関数「number()」を定義して、それを呼び出して下さい。
         */
+        
+        function sayHello(){
+            console.log("こんにちは");
+        }
+        sayHello();
 
+        function hundred(){
+            for(let i=1;i<=100;i++){
+                console.log(i);
+            }
+        }
+        hundred();
+
+        function number(){
+            let count=20;
+            while(count<=200){
+                if(count%2==0 && count%5==0){
+                    console.log(count);
+                }
+            }
+        }
+        number();
     </script>
 </body>
 </html>
