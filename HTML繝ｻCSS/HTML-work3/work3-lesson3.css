@@ -3,9 +3,10 @@
     padding: 0;
 }
 h1{
-    margin: 0 auto;
+    margin-inline: auto;
     background-color: blue;
     width: 130px;
+    margin-bottom: 30px;
 }
 .mainBox{
     background-color: yellow;
@@ -13,4 +14,4 @@ h1{
     height: 300px;
     padding-top: 60px;
     padding-left: 50px;
-}
+}   
