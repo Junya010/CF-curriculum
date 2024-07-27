@@ -52,9 +52,38 @@
     
 
     //この下に記述してください
+    $cards=array(2,3,4,5,6,7,8,9,10,
+    "A"=>11,
+    "J"=>10,
+    "Q"=>10,
+    "K"=>10
+);
+$playerCards=$cards[array_rand($cards)];
 
+$opponentCards=$cards[array_rand($cards)];
+
+$playerCards=$playerCards+$playerCards;
+$opponentCards=$opponentCards+$opponentCards;
+
+echo "自分:".$playerCards."点<br>";
+echo "対戦相手:".$opponentCards."点<br>";
     
-    ?>
+if($playerCards==21){
+    echo "ブラックジャック！あなたの勝ちです！";
+}elseif($opponentCards==21){
+    echo "ブラックジャック！相手の勝ちです！";
+}elseif($playerCards>21){
+    echo "相手の勝ちです";
+}elseif($opponentCards>21){
+    echo "あなたの勝ちです";
+}elseif($playerCards>$opponentCards){
+    echo "あなたの勝ちです";
+}elseif($playerCards<$opponentCards){
+    echo "相手の勝ちです";
+}elseif($playerCards==$opponentCards){
+    echo "引き分けです";
+}
+?>
 <div>
 </body>
 </html>

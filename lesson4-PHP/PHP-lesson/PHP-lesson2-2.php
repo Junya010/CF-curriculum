@@ -35,8 +35,32 @@
     */
 
     //この下に記述してください
-
-    
+    $i=20000;
+    $a=2000;
+    $b=0; //5千円札
+    $c=0; //千円札
+    $total=$i-$a-10000;
+    if($total>=5000){
+        $b=1;
+        $total-=5000;
+    }
+    if($total>=4000){
+        $c=4;
+        $total-=4000;
+    }elseif($total>=3000){
+        $c=3;
+        $total-=3000;
+    }elseif($total>=2000){
+        $c=2;
+        $total-=2000;
+    }elseif($total>=1000){
+        $c=1;
+        $total-=1;
+    }
+    echo "5千円札　{$b}";
+    echo "<br>";
+    echo "千円札　{$c}";
+    echo "<br>";    
 ?>
 <div>
 </body>

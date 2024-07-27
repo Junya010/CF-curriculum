@@ -40,7 +40,7 @@
       }
     }
     echo "<br>";
-
+   
 
     // 配列を引数として受け取り、その配列の要素の数を返す関数countElementsを作成してください。
     function countElements($counts){
