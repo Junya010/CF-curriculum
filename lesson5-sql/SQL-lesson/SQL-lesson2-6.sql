@@ -18,3 +18,7 @@
 +--------------------+
 
 */
+
+SELECT AUthor AS name
+FROM Books
+WHERE NOT Genre="SF";

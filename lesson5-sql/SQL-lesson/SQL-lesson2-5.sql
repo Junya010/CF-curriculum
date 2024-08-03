@@ -22,3 +22,12 @@
 +------------+--------------------------+----------------------+------------------+-------------------+--------------+-----------------------+
 
 */
+
+
+
+SELECT Books.*,
+(SELECT AVG(Score)FROM Reviews) AS average_score
+FROM Books
+LEFT JOIN Reviews
+ON Books.ID = Reviews.BookID 
+GROUP BY ID ,Title ,AUthor ,PublicationYear ,ISBN ,Genre 

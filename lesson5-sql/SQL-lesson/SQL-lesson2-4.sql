@@ -11,3 +11,9 @@
   | genre   | average_score |
   +---------+---------------+
 */
+
+SELECT Genre AS genre,AVG(Score) AS average_score
+FROM Books
+JOIN Reviews
+ON Books.ID = Reviews.BookID
+GROUP BY Genre;

@@ -15,3 +15,10 @@
     2. Booksテーブルの、id=4のレコードを、title="今からできる、うつ病対策", PublicationYear = 2024, author = '闇　ヤミー' , ISBN = 42251-184といった内容に更新するSQL
     3. Booksテーブルの、student_id=5のレコードを全て削除するSQL
 */
+
+INSERT INTO Books (id,title,PublicationYear,author,ISBN) VALUES (4,'残業の正しい減らし方',2024,'Ryoma Koyasu','4444-221'),
+INSERT INTO Books (id,title,PublicationYear,author,ISBN) VALUES (5,'宝くじ当たらねーかな？',2021,'怠け　もの男','55114-184');
+
+UPDATE Books SET title ='今からできる、うつ病対策',PublicationYear =2024, author = '闇　ヤミー',ISBN = '42251-184' WHERE id=4;
+
+DELETE FROM Books where student_id =5;
